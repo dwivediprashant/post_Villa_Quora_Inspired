@@ -133,7 +133,7 @@ Follow these steps to set up **Post Villa** locally:
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-link>
+   git clone <https://github.com/dwivediprashant/post_Villa_Quora_Inspired.git>
    cd ReST-project
   ````
 
