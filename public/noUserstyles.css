@@ -1,0 +1,48 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+.container{
+    color: white;
+    background-color: maroon;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+.name{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration-line: line-through;
+    text-decoration-color: red;
+    color: black;
+    padding: 10px;
+    border: 2px solid maroon;
+    border-radius: 10px;
+}
+.status{
+    border: 2px solid red;
+    color: red;
+    margin-bottom: 1rem;
+    padding: 6px;
+    
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/homeStyles.css">
+    <link rel="icon" type="image/png" href="/assets/logo4.png">
+
+</head>
+<body >
+    <div class="nav-container">
+        <nav>
+            <span class="logo">
+                <img src="/assets/logo4.png" alt="">
+            </span>
+            <a href=""><i class="fa-solid fa-house"></i></a>
+            <label for="myPost">My Posts</label>
+            <a href="#allPosts">All posts</a>
+            <form method="get"action="http://localhost:3000/posts/new">
+                <button class="create-btn">Publish post</button>
+            </form>
+            <a href="https://github.com/dwivediprashant"><i class="fa-brands fa-github"></i>GitHub</a>
+        </nav>
+
+        <div class="create-post">
+            
+            <form method="get"action="/posts/myPosts" >
+                <input 
+                type="text" 
+                placeholder="Search posts by username"
+                name="username"
+                id="myPost"
+                required>
+                <button type="submit" id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </div>
+    <div class="all-posts"id="allPosts">
+                <h1 >All posts</h1>
+            <% for(post of postData){%>
+                <div class="post">
+                    <%if(post.image){%>
+                        <div class="post-img">
+                            <img src="/<%=post.image%>" alt="Post image">
+                            <div class="like-dis">
+                                <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i><span class="like-count"><%=post.post.like%></span></button>
+                                <button class="dis-btn"><i class="fa-solid fa-thumbs-down"></i><span class="dis-count"><%=post.post.dislike%></span></button>
+                            </div>
+                        </div>
+                    <%}%>
+                    <div class="description">
+                        <h2><i class="fa-solid fa-user"></i><i>@&nbsp;<%=post.username%></i></h2>
+                        <div class="caption"><i class="fa-solid fa-comment"></i><%=post.post.description%></div>
+                        <div class="post-options">
+                            <form method="get" action="http://localhost:3000/posts/<%=post.postId%>">
+                                <button type="submit" class="view-btn "><i class="fa-solid fa-eye"></i></button>
+                            </form>
+                            <form method="get"action="http://localhost:3000/posts/<%=post.postId%>/edit">
+                                <button type="submit" class="edit-btn"><i class="fa-solid fa-pen"></i></button>
+                            </form>
+                            <form method="post"action="http://localhost:3000/posts/<%=post.postId%>?_method=DELETE">
+                                <button type="submit" class="del-btn"><i class="fa-solid fa-trash"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            <%}%>
+            
+    </div>
+    <footer>
+        <div class="logo-foot">
+            <img src="/assets/logo4.png" alt="">
+            <div class="logo-desc">
+                <p>Developed by Prashant</p>
+            </div>
+        </div>
+        <div class="social-link">
+            <div>
+                <p>Connect with me</p>
+            </div>
+            <div>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-discord"></i></a>
+                <a href=""><i class="fa-solid fa-code"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+</html>

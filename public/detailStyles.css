@@ -1,0 +1,34 @@
+body{
+    font-family: sans-serif;
+}
+.post-detail{
+    background-color:whitesmoke;
+    color: #2C3E50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-items: center; */
+    margin-bottom: 2rem;
+    overflow-wrap: anywhere;
+    /* font-weight: 600; */
+}
+h1{
+    text-align: center;
+    width: 100%;
+    background-color: maroon;
+    color: white;
+}
+button{
+    background-color: #F4C430;
+    height: 30px;
+   
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+.back-btn{
+    text-align: center;
+     padding: 10px;
+}

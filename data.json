@@ -1,0 +1,32 @@
+[
+  {
+    "postId": 1,
+    "username": "kelly watson",
+    "post": {
+      "like":21,
+      "dislike":12,
+      "description": "Just finished my morning workout!"
+    },
+    "image":"uploads/post4.jpg"
+  },
+  {
+    "postId": 2,
+    "username": "james",
+    "post": {
+      "like":44,
+      "dislike":16,
+      "description": "Loving this new yoga routine."
+    },
+    "image":"uploads/post8.webp"
+  },
+  {
+    "postId": 3,
+    "username": "fit_guy",
+    "post": {
+      "like":39,
+      "dislike":9,
+      "description": "Cardio session done! Feeling great."
+    },
+    "image":"uploads/user1.jpeg"
+  }
+]

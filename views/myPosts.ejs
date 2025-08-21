@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My posts</title>
+    <link rel="stylesheet" href="/myPosts.css">
+</head>
+<body>
+    <h2>@&nbsp;<%=myPosts[0].username%>'s posts</h2>
+    <div class="my-posts">
+        <%for(let post of myPosts){%>
+            <div class="post">
+                <div class="post-img">
+                    <img src="/<%=post.image%>" alt="post-img">
+                </div>
+                <div class="post-details">
+                    <div>Post description : <%=post.post.description%></div>
+                    <div>Post ID : <%=post.postId%></div>
+                </div>
+            </div>
+        <%}%>
+        <a href="/posts"><button>Exit</button></a>
+    </div>
+</body>
+</html>

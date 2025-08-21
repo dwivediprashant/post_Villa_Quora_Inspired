@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit post</title>
+    <link rel="stylesheet" href="/editStyles.css">
+</head>
+<body>
+    <h1>Edit post</h1>
+    <div class="container">
+        <form method="post" action="http://localhost:3000/posts/<%=reqPost.postId%>?_method=PATCH">
+            <h3>Post Id : <%=reqPost.postId%></h3>
+            <h3>Posted by : <%=reqPost.username%></h3>
+            <textarea name="description"><%=reqPost.post.description%></textarea>
+            <button type="submit">Save</button>
+            <a href="/posts">Exit</a>
+        </form>
+    </div>
+</body>
+</html>

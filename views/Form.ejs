@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New form</title>
+    <link rel="stylesheet" href="/formStyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h2>Upload your post</h2>
+    <div class="container">
+        <form class="form" method="post" action="http://localhost:3000/posts" enctype="multipart/form-data">
+        
+            <div class="username">
+                <span>@</span>
+                <span><input type="text" placeholder="Enter username" name="username"required></span>
+            </div>
+            <div class="compo-code">
+                <textarea name="description" placeholder="What is your post describing ?"></textarea>
+            </div>
+            <div class="comp-img">
+                <label for="file">Post image</label>
+                <input type="file" name="image" accept="image/*" id="file" required>
+            </div>
+            <div class="publish-btn">
+                <button type="submit">Publish <i class="fa-solid fa-arrow-up-from-bracket"></i></button>
+                <a href="/posts">Exit</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

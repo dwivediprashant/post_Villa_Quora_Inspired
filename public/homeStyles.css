@@ -1,0 +1,188 @@
+body{
+    margin: 0;
+    background-color: white;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+.logo img{
+    width: 40px;
+    height: 40px;
+}
+nav{
+    width: 100vw;
+    height: 55px;
+    background-color: #7B2D26;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+button{
+    background-color: #F4C430;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+.create-btn{
+    background-color: transparent;
+    color: white;
+    font-weight: normal;
+    height: 23.2px;
+    font-size: 20px;
+    padding: 0;
+}
+a,label{
+    color: white;
+    text-decoration: none;
+    font-family:sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+i{
+    color: white;
+}
+.create-post{
+    width: 100vw;
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-top: 1rem;
+}
+.create-post form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input:hover{
+    outline: none;
+}
+.create-post form input{
+    background-color: rgba(245, 245, 245, 0.877);
+    width: 70%;
+    height: 100%;
+    margin-right: 1rem;
+    border: 1px solid maroon;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.all-posts{
+    background-color: white;
+}
+.post{
+    background-color: #F5E6D3;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.description{
+    background-color: wheat;
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    max-width: 400px;
+    height: max-content;
+    padding: 10px;
+}
+.caption{
+    display: flex;
+    overflow-wrap: anywhere;
+}
+.description i{
+    color: black;
+}
+.all-posts h1{
+    text-align: center;
+    color: white;
+    background-color: #2C3E50;
+}
+.post-options{
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: transparent;
+}
+
+.post-img{
+    max-width: 300px;
+    margin-top: 1rem;
+}
+.post-img img{
+    max-width: 300px;
+    max-height: 300px;
+}
+.del-btn i{
+    font-weight:700;
+    background-color: transparent;
+    color: red;
+    
+}
+.post-options button{
+    background-color: white;
+}
+.like-btn,.dis-btn{
+    background-color: transparent;
+    margin-right: 1rem;
+    font-size: 20px;
+}
+.like-dis{
+    display: flex;
+    justify-content: center;
+  
+}
+.like-dis i{
+      color: rgb(67, 64, 64);
+}
+.like-dis i.like-btn-i{
+    color: green;
+}
+.like-dis i.dis-btn-i{
+    color: red;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    background-color: maroon;
+    color: white;
+}
+.logo-foot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-foot img{
+    height: 150px;
+    width: 150px;
+}
+.social-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 250px;
+    height: 150px;
+}
+.social-link div{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.social-link div i{
+    font-weight: 700;
+    font-size: 25px;
+}
